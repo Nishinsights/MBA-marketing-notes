@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>MBA Marketing Notes - STP</title>
+  <title>MBA Marketing Notes</title>
   <style>
     body {
       margin: 0;
@@ -18,41 +18,17 @@
       text-align: center;
     }
     .container {
-      display: flex;
-      flex-wrap: wrap;
-      max-width: 1200px;
+      max-width: 800px;
       margin: auto;
-    }
-    nav {
-      flex: 1;
-      min-width: 200px;
-      background: #e6f0ff;
       padding: 20px;
-      box-sizing: border-box;
-      height: fit-content;
     }
-    nav h3 {
-      margin-top: 0;
-    }
-    nav ul {
-      list-style: none;
-      padding: 0;
-    }
-    nav li {
-      margin: 10px 0;
-    }
-    nav a {
-      text-decoration: none;
-      color: #0056b3;
-    }
-    main {
-      flex: 3;
-      min-width: 300px;
-      padding: 20px;
-      box-sizing: border-box;
-    }
-    h2 {
-      color: #0056b3;
+    #searchInput {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 20px;
+      font-size: 16px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
     }
     .section {
       background: white;
@@ -60,6 +36,10 @@
       margin-bottom: 20px;
       border-radius: 8px;
       box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    }
+    h2 {
+      color: #0056b3;
+      margin-top: 0;
     }
     ul {
       margin-top: 10px;
@@ -77,95 +57,56 @@
     th {
       background: #e6f0ff;
     }
-    @media(max-width: 768px) {
-      .container {
-        flex-direction: column;
-      }
-    }
   </style>
 </head>
 <body>
 
   <header>
     <h1>MBA Marketing Notes</h1>
-    <p>Chapter 1: Market Segmentation, Targeting, Positioning (STP)</p>
+    <p>Quick Revision with Examples</p>
   </header>
 
   <div class="container">
 
-    <nav>
-      <h3>Contents</h3>
-      <ul>
-        <li><a href="#intro">Introduction</a></li>
-        <li><a href="#segmentation">Market Segmentation</a></li>
-        <li><a href="#targeting">Targeting</a></li>
-        <li><a href="#positioning">Positioning</a></li>
-        <li><a href="#importance">Importance of STP</a></li>
-        <li><a href="#revision">Quick Revision Table</a></li>
-      </ul>
-    </nav>
+    <input type="text" id="searchInput" placeholder="Search topics..." onkeyup="searchTopics()">
 
-    <main>
-      <div class="section" id="intro">
-        <h2>1. Introduction</h2>
-        <p>STP is a fundamental marketing process:</p>
+    <div id="topicsList">
+
+      <div class="section">
+        <h2>Market Segmentation</h2>
+        <p><strong>Definition:</strong> Dividing market into smaller consumer groups based on similar needs or characteristics.</p>
         <ul>
-          <li><strong>Segmentation</strong>: Divide market into groups</li>
-          <li><strong>Targeting</strong>: Select which groups to serve</li>
-          <li><strong>Positioning</strong>: Build product image in customer mind</li>
+          <li>Geographic: region, city size</li>
+          <li>Demographic: age, gender, income</li>
+          <li>Psychographic: lifestyle, personality</li>
+          <li>Behavioural: benefits sought, usage rate</li>
         </ul>
+        <p><strong>Example (India):</strong> Coca Cola – different pack sizes for rural and urban markets.</p>
       </div>
 
-      <div class="section" id="segmentation">
-        <h2>2. Market Segmentation</h2>
-        <p><strong>Definition:</strong> Dividing market into smaller, similar consumer groups.</p>
-        <p><strong>Bases of Segmentation:</strong></p>
+      <div class="section">
+        <h2>Consumer Behaviour</h2>
+        <p><strong>Definition:</strong> Study of how individuals, groups select, use, and dispose products to satisfy needs.</p>
         <ul>
-          <li>Geographic (region, city, rural/urban)</li>
-          <li>Demographic (age, gender, income, occupation)</li>
-          <li>Psychographic (lifestyle, values, personality)</li>
-          <li>Behavioural (benefits sought, loyalty, usage rate)</li>
+          <li>Influenced by cultural, social, personal, psychological factors.</li>
         </ul>
-        <p><strong>Example (India):</strong> Coca Cola – different SKUs (200 ml glass bottle for rural market, large PET bottles for urban families)</p>
+        <p><strong>Example (India):</strong> Patanjali appeals to health-conscious, Ayurveda-trusting consumers.</p>
       </div>
 
-      <div class="section" id="targeting">
-        <h2>3. Targeting</h2>
-        <p><strong>Definition:</strong> Choosing which segments to serve.</p>
-        <p><strong>Targeting Strategies:</strong></p>
+      <div class="section">
+        <h2>Marketing Mix</h2>
+        <p><strong>Definition:</strong> Combination of Product, Price, Place, Promotion to market a product effectively.</p>
         <ul>
-          <li>Undifferentiated (mass marketing)</li>
-          <li>Differentiated (different products for different segments)</li>
-          <li>Concentrated (focus on one segment, niche)</li>
-          <li>Micromarketing (individual or local marketing)</li>
+          <li>Product: quality, design</li>
+          <li>Price: MRP, discounts</li>
+          <li>Place: distribution channels</li>
+          <li>Promotion: ads, sales promotion</li>
         </ul>
-        <p><strong>Example (India):</strong> Parle-G uses undifferentiated targeting (same product for masses). Himalaya Baby Care uses concentrated targeting (new mothers).</p>
+        <p><strong>Example (India):</strong> Amul Ice Cream – good product, affordable price, wide distribution, TV ads.</p>
       </div>
 
-      <div class="section" id="positioning">
-        <h2>4. Positioning</h2>
-        <p><strong>Definition:</strong> Creating a clear, distinctive, desirable place in the minds of target consumers compared to competitors.</p>
-        <p><strong>Steps in Positioning:</strong></p>
-        <ul>
-          <li>Identify competitive advantages</li>
-          <li>Select the right advantage</li>
-          <li>Communicate it effectively</li>
-        </ul>
-        <p><strong>Example (India):</strong> Volvo positions on safety and reliability. Maggi positions as quick, tasty, and emotional connect with '2-minute noodles'.</p>
-      </div>
-
-      <div class="section" id="importance">
-        <h2>5. Importance of STP</h2>
-        <ul>
-          <li>Helps focus marketing resources</li>
-          <li>Matches products to customer needs</li>
-          <li>Creates strong brand image</li>
-          <li>Drives better sales and profitability</li>
-        </ul>
-      </div>
-
-      <div class="section" id="revision">
-        <h2>Quick Revision Table</h2>
+      <div class="section">
+        <h2>STP Revision Table</h2>
         <table>
           <tr>
             <th>STP</th>
@@ -175,23 +116,44 @@
           <tr>
             <td>Segmentation</td>
             <td>Divide market</td>
-            <td>Dove segments based on skin care needs</td>
+            <td>Dove segments based on skincare needs</td>
           </tr>
           <tr>
             <td>Targeting</td>
             <td>Select segments</td>
-            <td>Dove targets premium skincare customers</td>
+            <td>Dove targets premium customers</td>
           </tr>
           <tr>
             <td>Positioning</td>
             <td>Image in mind</td>
-            <td>Dove positions as “mild moisturising soap”</td>
+            <td>Dove as “mild moisturising soap”</td>
           </tr>
         </table>
       </div>
 
-    </main>
+    </div>
+
   </div>
+
+  <script>
+    function searchTopics() {
+      var input, filter, topics, sections, h2, i, txtValue;
+      input = document.getElementById('searchInput');
+      filter = input.value.toUpperCase();
+      topics = document.getElementById("topicsList");
+      sections = topics.getElementsByClassName('section');
+
+      for (i = 0; i < sections.length; i++) {
+        h2 = sections[i].getElementsByTagName("h2")[0];
+        txtValue = h2.textContent || h2.innerText;
+        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+          sections[i].style.display = "";
+        } else {
+          sections[i].style.display = "none";
+        }
+      }
+    }
+  </script>
 
 </body>
 </html>
